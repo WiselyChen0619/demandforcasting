@@ -18,6 +18,12 @@ The first iteration of the Demand Forecasting System has been successfully compl
 - ✅ Identified top growth SKUs with up to 120% expected increase
 - ✅ Created automated pipeline for future predictions
 
+### Visual Summary
+The following key visualizations are included in this report:
+- **Figure 1**: Model performance comparison and evaluation metrics
+- **Figure 2**: 30-day forecast with confidence intervals
+- **Figure 3**: Top 10 SKU analysis and growth projections
+
 ---
 
 ## 1. Data Overview
@@ -82,6 +88,8 @@ The first iteration of the Demand Forecasting System has been successfully compl
 
 **Best Model**: 14-day Moving Average (lowest MAE)
 
+*See Figure 1 in Section 6.1 for visual comparison of model performance.*
+
 ---
 
 ## 3. Key Findings
@@ -91,6 +99,8 @@ The first iteration of the Demand Forecasting System has been successfully compl
 - **30-Day Forecast Average**: 9,851 shipments/day
 - **Expected Growth**: 21.9% increase
 - **Confidence**: 95% confidence intervals calculated
+
+*Refer to Figure 2 in Section 6.2 for visualization of the forecast trend and confidence intervals.*
 
 ### 3.2 Weekly Patterns
 Strong weekly seasonality detected:
@@ -118,6 +128,8 @@ Three SKUs showing exceptional growth potential:
 - **SKU 168773**: +120.1% (from rank #2 historically)
 - **SKU 178801**: +78.5% (from rank #6 historically)
 - **SKU 808545**: +34.2% (from rank #18 historically)
+
+*See Figure 3 in Section 6.3 for detailed SKU performance visualization and growth rate analysis.*
 
 ---
 
@@ -197,16 +209,33 @@ Demand-Forecasting/
 ## 6. Visualizations Generated
 
 ### 6.1 Model Performance Comparison
-![Model Comparison](../output/forecast_results_en.png)
-*Comparison of different models on test data*
+![Model Comparison](forecast_results_en.png)
+*Figure 1: Comparison of different forecasting models on test data. The chart shows actual vs predicted values, residual analysis, and performance metrics (MAE/RMSE) for each model.*
 
-### 6.2 Future Forecast
-![Future Forecast](../output/future_forecast_en.png)
-*30-day forecast with confidence intervals*
+**Key Observations:**
+- 14-day MA shows the best performance with lowest MAE
+- Prophet model captures weekly seasonality well
+- Ensemble approach provides balanced predictions
 
-### 6.3 SKU Analysis
-![SKU Analysis](../output/top_skus_forecast_en.png)
-*Top 10 SKUs historical vs predicted performance*
+### 6.2 Future Forecast with Historical Context
+![Future Forecast](future_forecast_en.png)
+*Figure 2: 30-day shipment forecast showing historical data (blue) and predictions (red) with 95% confidence intervals. The green line marks the transition from historical to predicted data.*
+
+**Forecast Highlights:**
+- Clear upward trend indicating 21.9% growth
+- Peak prediction: 11,016 shipments on June 22
+- Confidence interval widens as forecast extends further
+- Weekly seasonality pattern maintained in predictions
+
+### 6.3 SKU-Level Analysis and Growth Projections
+![SKU Analysis](top_skus_forecast_en.png)
+*Figure 3: Top 10 SKUs comparison showing historical 30-day average (blue) vs predicted 30-day total (orange), with growth rate analysis below.*
+
+**SKU Insights:**
+- SKU 168773 shows exceptional 120% growth potential
+- 3 SKUs with >30% growth rate (green bars)
+- 5 SKUs showing decline (red bars)
+- Clear shift in SKU rankings expected
 
 ---
 
