@@ -1,0 +1,29 @@
+# Demand Forecasting System Requirements for Cloud Run
+# Optimized for production deployment
+
+# Core Data Processing
+pandas==2.3.0
+numpy==2.3.1
+openpyxl==3.1.5
+
+# Forecasting Models
+scikit-learn==1.7.0
+statsmodels==0.14.4
+prophet==1.1.7
+cmdstanpy==1.2.5
+
+# API Framework
+flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0  # Production WSGI server
+
+# Required dependencies
+joblib==1.5.1
+scipy==1.16.0
+python-dateutil==2.9.0.post0
+pytz==2025.2
+holidays==0.75
+
+# Cloud Run optimizations
+google-cloud-storage==2.10.0  # For model storage
+google-cloud-logging==3.8.0   # For logging

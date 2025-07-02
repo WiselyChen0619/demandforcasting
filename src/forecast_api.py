@@ -256,5 +256,9 @@ def create_test_client():
 load_model()
 
 if __name__ == '__main__':
+    # Get port from environment variable for Cloud Run
+    import os
+    port = int(os.environ.get('PORT', 8080))
+    
     # Run the Flask app
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=False)
