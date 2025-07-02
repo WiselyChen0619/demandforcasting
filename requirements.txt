@@ -1,0 +1,27 @@
+# Demand Forecasting System Requirements
+# Python 3.9+ required
+
+# Data Processing
+pandas==2.3.0
+numpy==2.3.1
+openpyxl==3.1.5  # Excel file handling
+
+# Forecasting Models
+scikit-learn==1.7.0
+statsmodels==0.14.4
+prophet==1.1.7
+cmdstanpy==1.2.5  # Required by Prophet
+
+# Visualization
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Utilities
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tqdm==4.67.1
+holidays==0.75  # For Prophet holiday handling
+
+# Optional for enhanced performance
+joblib==1.5.1
+scipy==1.16.0

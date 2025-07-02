@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data files (keep structure but ignore large files)
+data/*.xlsx
+data/*.xls
+!data/.gitkeep
+
+# Model files (large binary files)
+models/*.pkl
+models/*.joblib
+models/*.h5
+!models/.gitkeep
+
+# Output files (regeneratable)
+output/*.png
+output/*.jpg
+output/*.pdf
+!output/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+~$*
+
+# Configuration files with sensitive data
+config_local.json
+.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
