@@ -25,3 +25,7 @@ holidays==0.75  # For Prophet holiday handling
 # Optional for enhanced performance
 joblib==1.5.1
 scipy==1.16.0
+
+# API dependencies (optional)
+flask==3.0.0
+flask-cors==4.0.0
